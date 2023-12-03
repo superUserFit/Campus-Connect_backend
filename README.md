@@ -1,2 +1,3 @@
 # Campus-Connect_backend
-Final Year Project
+npm install: Install dependencies
+npm run dev: Run the application
