@@ -33,7 +33,8 @@ app.use(express.urlencoded({ extended: true })); // To parse form data in the re
 app.use(cookieParser());
 app.use(cors({
 	origin: "https://campus-connect-frontend-six.vercel.app",
-	credentials: true
+	credentials: true,
+	method: ["POST", "GET],
 }));
 
 // Routes
