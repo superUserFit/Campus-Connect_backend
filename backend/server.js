@@ -34,7 +34,7 @@ app.use(cookieParser());
 app.use(cors({
 	origin: "https://campus-connect-frontend-six.vercel.app/",
 	credentials: true
-));
+}));
 
 // Routes
 app.use("/api/users", userRoutes);
