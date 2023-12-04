@@ -29,7 +29,7 @@ router.post("/logout", logoutUser);
 router.post("/follow/:id", protectRoute, followUnFollowUser);
 router.put("/update/:id", protectRoute, updateUser);
 router.put("/freeze", protectRoute, freezeAccount);
-router.put("/changePassword", protectRoute, changePassword);
+router.put("/changePassword", changePassword);
 
 router.get("/getDepartments", protectRoute, getDepartments);
 router.get("/getDiplomas", protectRoute, getDiplomas);

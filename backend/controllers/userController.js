@@ -79,6 +79,7 @@ const loginUser = async (req, res) => {
     try {
         const { email, password, access } = req.body;
         let user;
+		console.log("Email: ", email);
 
         // Find user by email
         user = await User.findOne({ email });
@@ -297,7 +298,7 @@ const changePassword = async (req, res) => {
 	const { email, newPassword } = req.body;
 
 	try {
-		const user = await User.find({ email });
+		const user = await User.findOne({ email: email });
 
 		if(!user) {
 			return res.status(404).json({ error: "User not found" });
