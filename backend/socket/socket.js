@@ -8,7 +8,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
     cors: {
-        origin: ["https://campus-connect-frontend-six.vercel.app/"],
+        origin: ["https://campus-connect-frontend-six.vercel.app"],
         methods: ["GET", "POST"],
     },
 });
